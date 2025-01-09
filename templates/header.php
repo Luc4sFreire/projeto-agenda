@@ -1,4 +1,14 @@
-<?php include_once("config/process.php"); ?>
+<?php 
+
+    include_once("config/process.php"); 
+
+    // Limpa a mensagem
+    if(isset($_SESSION['msg'])){
+        $printMsg = $_SESSION['msg'];
+        $_SESSION['msg'] = "";
+    }
+
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
